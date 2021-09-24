@@ -19,11 +19,11 @@ body {
     flex-direction: column;
 }
 
-h2 {
+#bio-title {
     text-align: center;
 }
 
-ul {
+#tribute-bio {
     width: 25%;
     align-self: center;
     text-align: justify;
@@ -33,7 +33,7 @@ li {
     margin-bottom: 20px;
 }
 
-blockquote {
+#tribute-quote {
     width: 25%;
     align-self: center;
     text-align: justify;
