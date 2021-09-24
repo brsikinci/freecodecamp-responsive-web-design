@@ -2,11 +2,17 @@ body {
     background-color: rgb(231, 231, 204);
 }
 
-#main {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto Slab', serif;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    width: 25%;
 }
 
 #img-caption {
@@ -17,15 +23,15 @@ body {
 #tribute-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-#bio-title {
+h2 {
     text-align: center;
 }
 
-#tribute-bio {
+ul {
     width: 25%;
-    align-self: center;
     text-align: justify;
 }
 
@@ -33,9 +39,8 @@ li {
     margin-bottom: 20px;
 }
 
-#tribute-quote {
+blockquote {
     width: 25%;
-    align-self: center;
     text-align: justify;
 }
 
@@ -45,12 +50,6 @@ h3 {
 
 #tribute-link {
     color: #39658a;
-}
-
-#image {
-    display: block;
-    margin: auto;
-    width: 25%;
 }
 
 .bold {
