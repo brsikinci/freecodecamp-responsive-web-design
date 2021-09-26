@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1 id="title"></h1>
-    <p></p>
+    <p id="description"></p>
     
     <form id="survey-form">
         <label id="name-label" for="name">
@@ -23,35 +23,49 @@
             Age (Optional)
             <input id="age" type="text" placeholder="Your age" min="18" max="100">
         </label>
-    </form>
 
-    <p>Which option best describes your current role?</p>
-    <select id="dropdown" name="role" class="form-control" required>
-        <option disabled selected value>Select current role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="other">Other</option>
-    </select>
-
-    <p>Do you like working in our company?</p>
-    <form id="survey-form">
-        <label id="name-label" for="name">
-            Name
-            <input id="name" type="radio">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <p>Do you like working in our company?</p>
+        <label for="radio-yes">
+            Yes
+            <input id="radio-yes" type="radio" name="employer-satisfaction">
         </label>
         
-        <label id="email-label" for="email">
-            Email
-            <input id="email" type="radio">
+        <label for="radio-neutral">
+            Neutral
+            <input id="radio-neutral" type="radio" name="employer-satisfaction">
         </label>
         
-        <label id="number-label" for="age">
-            Age (Optional)
-            <input id="age" type="radio>
+        <label for="radio-no">
+            No
+            <input id="radio-no" type="radio" name="employer-satisfaction">
         </label>
-    </form>
 
+        <p>What should we improve in our company? (Check all that apply.)</p>
+        <label for="checkbox-hygience">
+            Hygiene
+            <input id="checkbox-hygience" type="checkbox" name="employer-satisfaction">
+        </label>
+        
+        <label for="checkbox-equipment">
+            Equipment
+            <input id="checkbox-equipment" type="checkbox" name="employer-satisfaction">
+        </label>
+        
+        <label for="checkbox-transportation">
+            Transportation
+            <input id="checkbox-transportation" type="checkbox" name="employer-satisfaction">
+        </label>
+
+    </form>
 
 </body>
