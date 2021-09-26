@@ -9,18 +9,49 @@
     <p></p>
     
     <form id="survey-form">
-        <label for="name">
-            Name:
+        <label id="name-label" for="name">
+            Name
             <input id="name" type="text" placeholder="Your name" required>
         </label>
-        <label>
-            Email:
+        
+        <label id="email-label" for="email">
+            Email
             <input id="email" type="text" placeholder="Your email" required>
         </label>
-        <label>
-            Age: (Optional)
-            <input id="email" type="text" placeholder="Your age">
+        
+        <label id="number-label" for="age">
+            Age (Optional)
+            <input id="age" type="text" placeholder="Your age" min="18" max="100">
         </label>
     </form>
+
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>
+
+    <p>Do you like working in our company?</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">
+            Name
+            <input id="name" type="radio">
+        </label>
+        
+        <label id="email-label" for="email">
+            Email
+            <input id="email" type="radio">
+        </label>
+        
+        <label id="number-label" for="age">
+            Age (Optional)
+            <input id="age" type="radio>
+        </label>
+    </form>
+
 
 </body>
