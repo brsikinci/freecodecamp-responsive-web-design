@@ -1,0 +1,54 @@
+body {
+    background: url("https://wallpaperaccess.com/full/1393343.jpg");
+    background-size: 100%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+}
+
+#description {
+    color: black;
+}
+
+form {
+    background-color: rgba(38, 157, 255, 0.65);
+    height: 100%;
+    width: 30%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+}
+
+textarea {
+    height: 12%;
+    width: 90%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-width-control {
+    width: auto;
+}
+
+.input-width-control {
+    width: 45%;
+}
+
+#dropdown-question {
+    margin-bottom: 5px;
+}
+
+.margin-top-control {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

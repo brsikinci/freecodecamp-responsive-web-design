@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>Survey Form</title>
         <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1 id="title">Employer Satisfaction Survey Form</h1>
@@ -12,20 +15,26 @@
         <form id="survey-form">
             <label id="name-label" for="name">
                 Name
-                <input id="name" type="text" placeholder="Your name" required>
+                <div class="div-width-control margin-top-control">
+                    <input id="name" type="text" class="input-width-control" placeholder="Your name" required>
+                </div>
             </label>
             
             <label id="email-label" for="email">
                 Email
-                <input id="email" type="email" placeholder="Your email" required>
+                <div class="div-width-control margin-top-control">
+                    <input id="email" type="email" class="input-width-control" placeholder="Your email" required>
+                </div>
             </label>
             
             <label id="number-label" for="age">
                 Age (Optional)
-                <input id="age" type="number" placeholder="Your age" min="18" max="100">
+                <div class="div-width-control margin-top-control">
+                    <input id="age" type="number" class="input-width-control" placeholder="Your age" min="18" max="100">
+                </div>
             </label>
     
-            <p>Which option best describes your current role?</p>
+            <p id="dropdown-question">Which option best describes your current role?</p>
             <select id="dropdown" name="role" required>
                 <option disabled selected value>Select current role</option>
                 <option value="student">Student</option>
@@ -35,42 +44,48 @@
                 <option value="other">Other</option>
             </select>
             
-            <p>Do you like working in our company?</p>
-            <label for="radio-yes">
-                Yes
-                <input id="radio-yes" type="radio" name="employer-satisfaction">
-            </label>
+            <div class="form-control">
+                <p>Do you like working in our company?</p>
+                <label for="radio-yes">
+                    <input id="radio-yes" type="radio" name="employer-satisfaction">
+                    Yes
+                </label>
+                
+                <label for="radio-neutral">
+                    <input id="radio-neutral" type="radio" name="employer-satisfaction">
+                    Neutral
+                </label>
+                
+                <label for="radio-no">
+                    <input id="radio-no" type="radio" name="employer-satisfaction">
+                    No
+                </label>
+            </div>
             
-            <label for="radio-neutral">
-                Neutral
-                <input id="radio-neutral" type="radio" name="employer-satisfaction">
-            </label>
+            <div class="form-control">                    
+                <p>What should we improve in our company? (Check all that apply.)</p>
+                <label for="checkbox-hygience">
+                    <input id="checkbox-hygience" type="checkbox" name="employer-satisfaction" value="hygiene">
+                    Hygiene
+                </label>
+                
+                <label for="checkbox-equipment">
+                    <input id="checkbox-equipment" type="checkbox" name="employer-satisfaction" value="equipment">
+                    Equipment
+                </label>
+                
+                <label for="checkbox-transportation">
+                    <input id="checkbox-transportation" type="checkbox" name="employer-satisfaction" value="transportation">
+                    Transportation
+                </label>
+            </div>
             
-            <label for="radio-no">
-                No
-                <input id="radio-no" type="radio" name="employer-satisfaction">
-            </label>
-    
-            <p>What should we improve in our company? (Check all that apply.)</p>
-            <label for="checkbox-hygience">
-                Hygiene
-                <input id="checkbox-hygience" type="checkbox" name="employer-satisfaction" value="hygiene">
-            </label>
-            
-            <label for="checkbox-equipment">
-                Equipment
-                <input id="checkbox-equipment" type="checkbox" name="employer-satisfaction" value="equipment">
-            </label>
-            
-            <label for="checkbox-transportation">
-                Transportation
-                <input id="checkbox-transportation" type="checkbox" name="employer-satisfaction" value="transportation">
-            </label>
             
             <p>Any comments or suggestions?</p>
             <textarea placeholder="Enter your comment here..."></textarea>
-            
-            <button type="submit" id="submit" class="submit-button">Submit</button>
+            <div>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
         </form>
     </body>
 </html>
